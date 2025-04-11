@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@54.206.171.248 << 'EOF'
-            cd /var/www/html/CC_CLCD
+            cd /var/www/html/CLCD
             git pull origin main
             # Restart Nginx or any other service if needed
             sudo systemctl restart nginx
